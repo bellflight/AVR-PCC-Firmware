@@ -51,10 +51,6 @@ jobs:
       - name: Build Firmware
         run: poetry run python build.py
 
-      - name: Test GUI
-        shell: pwsh
-        run: ./dist/AVRGUI.*.exe --test-bundle
-
       - name: Upload PCC Firmware Artifact
         if: github.event_name != 'push'
         uses: actions/upload-artifact@v3
