@@ -12,18 +12,12 @@ def main(version: str) -> None:
     print(cmd)
     subprocess.check_call(cmd, cwd=THIS_DIR)
 
-    target = os.path.join(
-        BUILD_DIR,
-        f"pcc_firmware.{version}.bin",
-    )
+    target = os.path.join(BUILD_DIR, f"pcc_firmware.{version}.bin")
     if os.path.isfile(target):
         print(f"{target} already exists, replacing")
         os.remove(target)
 
-    os.rename(
-        os.path.join(BUILD_DIR, "firmware.bin"),
-        target,
-    )
+    os.rename(os.path.join(BUILD_DIR, "firmware.bin"), target)
 
 
 if __name__ == "__main__":
