@@ -1,0 +1,70 @@
+name: Build PCC Firmware
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches:
+      - main
+      - develop
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, 'ci skip')"
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Install poetry
+        run: |
+          python -m pip install pip wheel pipx --upgrade
+          pipx install poetry
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version-file: .python-version
+          cache: poetry
+
+      - name: Install Python Dependencies
+        run: poetry install
+
+      - name: Cache PlatformIO
+        uses: actions/cache@v3
+        with:
+          path: .pio
+          key: pio-${{ hashFiles('platformio.ini') }}-${{ hashFiles('poetry.lock') }}
+          restore-keys: |
+            pio-${{ hashFiles('platformio.ini') }}
+            pio
+
+      - name: Setup PlatformIO
+        run: python setup.py
+
+      - name: Run Checks
+        run: pio check --skip-packages
+
+      - name: Build Firmware
+        run: poetry run python build.py
+
+      - name: Test GUI
+        shell: pwsh
+        run: ./dist/AVRGUI.*.exe --test-bundle
+
+      - name: Upload PCC Firmware Artifact
+        if: github.event_name != 'push'
+        uses: actions/upload-artifact@v3
+        with:
+          name: PCC Firmware
+          path: .pio/build/adafruit_feather_m4/*.bin
+
+      - name: Create Release
+        if: github.event_name != 'pull_request'
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: ${{ github.sha }}
+          files: .pio/build/adafruit_feather_m4/*.bin
