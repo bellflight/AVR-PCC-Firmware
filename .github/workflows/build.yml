@@ -43,7 +43,7 @@ jobs:
             pio
 
       - name: Setup PlatformIO
-        run: python configure.py
+        run: poetry run python configure.py
 
       - name: Run Checks
         run: pio check --skip-packages
