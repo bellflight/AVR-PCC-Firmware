@@ -1,5 +1,5 @@
 {
-    "image": "docker.io/library/python:3.9-bullseye",
+    "image": "docker.io/library/python:3.11-bullseye",
     "extensions": [
         "platformio.platformio-ide"
     ],
