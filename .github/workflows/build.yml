@@ -46,7 +46,7 @@ jobs:
         run: poetry run python configure.py
 
       - name: Run Checks
-        run: pio check --skip-packages
+        run: poetry run pio check --skip-packages
 
       - name: Build Firmware
         run: poetry run python build.py
