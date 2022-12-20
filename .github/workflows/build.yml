@@ -48,8 +48,11 @@ jobs:
       - name: Run Checks
         run: poetry run pio check --skip-packages
 
+      - name: Get Short SHA
+        run: echo "SHORT_SHA=$(git rev-parse --short HEAD)" >> $GITHUB_ENV
+
       - name: Build Firmware
-        run: poetry run python build.py
+        run: poetry run python build.py --version ${{ env.SHORT_SHA }}
 
       - name: Upload PCC Firmware Artifact
         if: github.event_name != 'push'
@@ -62,5 +65,5 @@ jobs:
         if: github.event_name != 'pull_request'
         uses: softprops/action-gh-release@v1
         with:
-          tag_name: ${{ github.sha }}
+          tag_name: ${{ env.SHORT_SHA }}
           files: .pio/build/adafruit_feather_m4/*.bin
