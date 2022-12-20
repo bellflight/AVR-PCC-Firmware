@@ -5,7 +5,8 @@
 Run
 
 ```bash
-python setup.py
+poetry install
+poetry run python configure.py
 ```
 
 ## Building
@@ -13,7 +14,7 @@ python setup.py
 To build the firmware, run
 
 ```bash
-python build.py
+poetry run python build.py
 ```
 
 This will create a `pcc_firmware.<hash>.bin` file in `PCC/.pio/build/adafruit_feather_m4`.
