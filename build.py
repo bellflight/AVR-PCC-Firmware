@@ -12,6 +12,12 @@ def main(version: str) -> None:
     print(cmd)
     subprocess.check_call(cmd, cwd=THIS_DIR)
 
+    # delete other existing files
+    for f in os.listdir(BUILD_DIR):
+        if f.startswith("pcc_firmware"):
+            os.remove(os.path.join(BUILD_DIR, f))
+
+    # rename newly built file
     target = os.path.join(BUILD_DIR, f"pcc_firmware.{version}.bin")
     if os.path.isfile(target):
         print(f"{target} already exists, replacing")
