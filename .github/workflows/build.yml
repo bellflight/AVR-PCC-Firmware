@@ -59,11 +59,11 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: PCC Firmware
-          path: .pio/build/adafruit_feather_m4/*.bin
+          path: dist/*
 
       - name: Create Release
         if: github.event_name != 'pull_request'
         uses: softprops/action-gh-release@v1
         with:
           tag_name: ${{ env.SHORT_SHA }}
-          files: .pio/build/adafruit_feather_m4/*.bin
+          files: dist/*
