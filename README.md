@@ -1,5 +1,7 @@
 # Peripheral Control Computer Firmware
 
+[![Build PCC Firmware](https://github.com/bellflight/AVR-PCC-Firmware/actions/workflows/build.yml/badge.svg)](https://github.com/bellflight/AVR-PCC-Firmware/actions/workflows/build.yml)
+
 ## Setup
 
 Run
