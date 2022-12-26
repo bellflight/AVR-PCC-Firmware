@@ -4,10 +4,24 @@
 
 ## Setup
 
-Run
+It's assumed you have a version of Python installed from
+[python.org](https://python.org) that is the same or newer as
+defined in [`.python-version`](.python-version).
+
+First, install [Poetry](https://python-poetry.org/):
 
 ```bash
-poetry install
+python -m pip install pipx --upgrade
+pipx ensurepath
+pipx install poetry
+```
+
+Now, you can clone the repo and install dependencies:
+
+```bash
+git clone https://github.com/bellflight/AVR-PCC-Firmware
+cd AVR-PCC-Firmware
+poetry install --sync
 poetry run python configure.py
 ```
 
