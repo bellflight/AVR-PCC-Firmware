@@ -39,8 +39,8 @@ typedef enum {
   SUCCESS,
 } cmd_result;
 
-// static char *outgoing_preamble = "$P>"; //towards arduino
-// static char *incoming_preamble = "$P<"; //towards jetson
+static char *outgoing_preamble = "$P>";  // towards arduino
+static char *incoming_preamble = "$P<";  // towards jetson
 
 class AVRSerialParser {
  public:
