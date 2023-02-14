@@ -14,6 +14,8 @@ First, install [Poetry](https://python-poetry.org/):
 python -m pip install pipx --upgrade
 pipx ensurepath
 pipx install poetry
+# (Optionally) Add pre-commit plugin
+poetry self add poetry-pre-commit-plugin
 ```
 
 Now, you can clone the repo and install dependencies:
@@ -22,6 +24,7 @@ Now, you can clone the repo and install dependencies:
 git clone https://github.com/bellflight/AVR-PCC-Firmware
 cd AVR-PCC-Firmware
 poetry install --sync
+poetry run pre-commit install --install-hooks
 poetry run python configure.py
 ```
 
