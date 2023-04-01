@@ -36,7 +36,7 @@ To build the firmware, run
 poetry run python build.py
 ```
 
-This will create a `pcc_firmware.<hash>.bin` file in `dist`.
+This will create a `pcc_firmware.bin` file in `dist`.
 
 ## Flashing
 

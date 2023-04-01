@@ -20,8 +20,15 @@ def main(version: str) -> None:
     # copy newly built file
     shutil.copy(
         os.path.join(BUILD_DIR, "firmware.bin"),
-        os.path.join(DIST_DIR, f"pcc_firmware.{version}.bin"),
+        os.path.join(DIST_DIR, "pcc_firmware.bin"),
     )
+
+    # rename firmware when running in CI
+    if os.environ["CI"] == "true":
+        os.rename(
+            os.path.join(DIST_DIR, "pcc_firmware.bin"),
+            os.path.join(DIST_DIR, f"pcc_firmware.{version}.bin"),
+        )
 
 
 if __name__ == "__main__":
