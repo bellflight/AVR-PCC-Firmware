@@ -13,4 +13,4 @@
 
 [tool.poetry.group.dev.dependencies]
     pre-commit   = "^3.2.1"
-    clang-format = "^15.0.7"
+    clang-format = "^16.0.0"
