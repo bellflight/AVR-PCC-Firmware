@@ -24,7 +24,7 @@ def main(version: str) -> None:
     )
 
     # rename firmware when running in CI
-    if os.environ["CI"] == "true":
+    if os.getenv("CI") == "true":
         os.rename(
             os.path.join(DIST_DIR, "pcc_firmware.bin"),
             os.path.join(DIST_DIR, f"pcc_firmware.{version}.bin"),
