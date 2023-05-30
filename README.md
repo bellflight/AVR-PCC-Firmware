@@ -8,7 +8,8 @@ It's assumed you have a version of Python installed from
 [python.org](https://python.org) that is the same or newer as
 defined in [`.python-version`](.python-version).
 
-First, install [Poetry](https://python-poetry.org/):
+First, install [Poetry](https://python-poetry.org/) and
+[VS Code Task Runner](https://pypi.org/project/vscode-task-runner/):
 
 ```bash
 python -m pip install pipx --upgrade
