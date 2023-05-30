@@ -19,19 +19,16 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v3
 
-      - name: Install poetry
+      - name: Install Poetry/vscode-task-runner
         run: |
-          python -m pip install pip wheel pipx --upgrade
           pipx install poetry
+          pipx install vscode-task-runner
 
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
           python-version-file: .python-version
           cache: poetry
-
-      - name: Install Python Dependencies
-        run: poetry install --sync
 
       - name: Cache PlatformIO
         uses: actions/cache@v3
@@ -43,16 +40,16 @@ jobs:
             pio
 
       - name: Setup PlatformIO
-        run: poetry run python configure.py
+        run: vtr install
 
       - name: Run Checks
-        run: poetry run pio check --skip-packages
+        run: vtr checks
 
       - name: Get Short SHA
         run: echo "SHORT_SHA=$(git rev-parse --short HEAD)" >> $GITHUB_ENV
 
       - name: Build Firmware
-        run: poetry run python build.py --version ${{ env.SHORT_SHA }}
+        run: vtr build --extra-args="--version ${{ env.SHORT_SHA }}"
 
       - name: Upload PCC Firmware Artifact
         if: github.event_name != 'push'

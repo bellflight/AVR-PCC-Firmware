@@ -1,0 +1,39 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "poetry run python build.py"
+        },
+        {
+            "label": "pre-commit",
+            "type": "shell",
+            "command": "poetry run pre-commit run --all-files"
+        },
+        {
+            "label": "install",
+            "command": "poetry run pre-commit install --install-hooks",
+            "type": "shell",
+            "dependsOn": [
+                "poetry-install",
+                "configure"
+            ]
+        },
+        {
+            "label": "poetry-install",
+            "command": "poetry install --sync",
+            "type": "shell"
+        },
+        {
+            "label": "configure",
+            "type": "shell",
+            "command": "poetry run python configure.py"
+        },
+        {
+            "label": "checks",
+            "type": "shell",
+            "command": "poetry run pio check --skip-packages"
+        }
+    ]
+}
