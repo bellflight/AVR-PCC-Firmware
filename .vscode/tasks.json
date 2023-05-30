@@ -12,23 +12,15 @@
             "command": "poetry run pre-commit run --all-files"
         },
         {
-            "label": "install",
-            "command": "poetry run pre-commit install --install-hooks",
-            "type": "shell",
-            "dependsOn": [
-                "poetry-install",
-                "configure"
-            ]
-        },
-        {
             "label": "poetry-install",
             "command": "poetry install --sync",
             "type": "shell"
         },
         {
-            "label": "configure",
+            "label": "install",
             "type": "shell",
-            "command": "poetry run python configure.py"
+            "command": "poetry run python configure.py",
+            "dependsOn": ["poetry-install"]
         },
         {
             "label": "checks",
