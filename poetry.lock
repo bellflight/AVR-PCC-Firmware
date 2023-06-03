@@ -2,13 +2,13 @@
 
 [[package]]
 name = "aiofiles"
-version = "22.1.0"
+version = "23.1.0"
 description = "File support for asyncio."
 optional = false
 python-versions = ">=3.7,<4.0"
 files = [
-    {file = "aiofiles-22.1.0-py3-none-any.whl", hash = "sha256:1142fa8e80dbae46bb6339573ad4c8c0841358f79c6eb50a493dceca14621bad"},
-    {file = "aiofiles-22.1.0.tar.gz", hash = "sha256:9107f1ca0b2a5553987a94a3c9959fe5b491fdf731389aa5b7b1bd0733e32de6"},
+    {file = "aiofiles-23.1.0-py3-none-any.whl", hash = "sha256:9312414ae06472eb6f1d163f555e466a23aed1c8f60c30cccf7121dba2e53eb2"},
+    {file = "aiofiles-23.1.0.tar.gz", hash = "sha256:edd247df9a19e0db16534d4baaf536d6609a43e1de5401d7a4c1c148753a1635"},
 ]
 
 [[package]]
@@ -91,25 +91,25 @@ unicode-backport = ["unicodedata2"]
 
 [[package]]
 name = "clang-format"
-version = "16.0.2"
+version = "16.0.4"
 description = "Clang-Format is an LLVM-based code formatting tool"
 optional = false
 python-versions = "*"
 files = [
-    {file = "clang-format-16.0.2.tar.gz", hash = "sha256:772cffe40b97872ed74e1cf83c7401340a87bd2c1228da6bdd81ffb30c753e8a"},
-    {file = "clang_format-16.0.2-py2.py3-none-macosx_10_9_universal2.whl", hash = "sha256:875d12259a5eeb83348545532ed01b2a56105dce39d88173402d0938894765ff"},
-    {file = "clang_format-16.0.2-py2.py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:03ccb38d75fd0e4bbacede27b09cdc34d3c70bd8874a2ea86781cb97b28680ba"},
-    {file = "clang_format-16.0.2-py2.py3-none-manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:f6f8bf014221a983a7bdd9ed436e54c88d74ca8beb9b465967dfe33bb4e16a8e"},
-    {file = "clang_format-16.0.2-py2.py3-none-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:ecb34882f0dac583f12f1307f24a9b3c447f64f1f1f4e560d5ef061a10291187"},
-    {file = "clang_format-16.0.2-py2.py3-none-manylinux_2_17_s390x.manylinux2014_s390x.whl", hash = "sha256:e2f048dc595ee9ee5638d27754dce1ceb243b92ab49912a729396b4e3e5fdd99"},
-    {file = "clang_format-16.0.2-py2.py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:c3229b3b622bc5a1e1a2c60142560473052afe92c3fd9e2891ebdab739d135aa"},
-    {file = "clang_format-16.0.2-py2.py3-none-musllinux_1_1_aarch64.whl", hash = "sha256:24743bdbad14812ae040dea329fa2fba118424a8da42e7bf05198bc18bcad299"},
-    {file = "clang_format-16.0.2-py2.py3-none-musllinux_1_1_i686.whl", hash = "sha256:e533c20351719aa295ccc73863df546c90a1ec15dbbd7b0ffece83e8e1da9680"},
-    {file = "clang_format-16.0.2-py2.py3-none-musllinux_1_1_ppc64le.whl", hash = "sha256:4a39f60f383a8b36843868d823972d02970f3574c3d064d5058ded9c49874ea4"},
-    {file = "clang_format-16.0.2-py2.py3-none-musllinux_1_1_s390x.whl", hash = "sha256:4f6ca9fdf0eaba27225bb33dc4a75112304e96e4add0f8314b091ecbcb2b9826"},
-    {file = "clang_format-16.0.2-py2.py3-none-musllinux_1_1_x86_64.whl", hash = "sha256:6df4a6f8918a065bff8161e8cae9ee0dab58a8f5626b1fed406806b7e8c817b6"},
-    {file = "clang_format-16.0.2-py2.py3-none-win32.whl", hash = "sha256:1fe94d31b0ad40bc8a0145f24a44ad19c5a137b14f5392fe0063434a23c00999"},
-    {file = "clang_format-16.0.2-py2.py3-none-win_amd64.whl", hash = "sha256:df69db2d4504c83b260fe5b8f1ab6468505d29fc411d8501ed45349eb54025cd"},
+    {file = "clang-format-16.0.4.tar.gz", hash = "sha256:97d1478ce52e403aa54165ba47df919327378e3ede2a7af322ea2e06a34b5d15"},
+    {file = "clang_format-16.0.4-py2.py3-none-macosx_10_9_universal2.whl", hash = "sha256:796f1945de740f15d5cb78e9ab966aa9d774cb6d7da4ec67b1b9a8ea24f71533"},
+    {file = "clang_format-16.0.4-py2.py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:e0aafcbc472bb190e104c2dbe004fcf6aa03debd1e22d7be1d065524188744b2"},
+    {file = "clang_format-16.0.4-py2.py3-none-manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:1e1970f68aa8a065fd4e37bba955a9f71506521ea3e0b27bbcdf7e81517db904"},
+    {file = "clang_format-16.0.4-py2.py3-none-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:43639fa36768c91ca135686e92bf8be8e7c98d586e2968924ffb10bae9e9fdff"},
+    {file = "clang_format-16.0.4-py2.py3-none-manylinux_2_17_s390x.manylinux2014_s390x.whl", hash = "sha256:dd85d30c99ab9f37ffe19c1123e416d7aa407950ee79480525d370f17a161297"},
+    {file = "clang_format-16.0.4-py2.py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:d0dcc97b26c10ee9138a44f73085834b5d55c35450a303ce991c3be826586a76"},
+    {file = "clang_format-16.0.4-py2.py3-none-musllinux_1_1_aarch64.whl", hash = "sha256:3bc415a27351f179a7485a85f9c41dd16313969eb37aed12343b3376004fc301"},
+    {file = "clang_format-16.0.4-py2.py3-none-musllinux_1_1_i686.whl", hash = "sha256:fb105f9e0ec826bef78335ae83570511ff74526b9d117b47f0581f052d2423b0"},
+    {file = "clang_format-16.0.4-py2.py3-none-musllinux_1_1_ppc64le.whl", hash = "sha256:d6ff7108fb06578c7ab4f839a2138c621b111a24bcbc4fe94457641b4727e737"},
+    {file = "clang_format-16.0.4-py2.py3-none-musllinux_1_1_s390x.whl", hash = "sha256:0ac80dc2f02f086c3d33bc3712889d612243282099576c827d57b593602da5be"},
+    {file = "clang_format-16.0.4-py2.py3-none-musllinux_1_1_x86_64.whl", hash = "sha256:6be733dd7748420b28d1c860a776aa774a106e3665ab1340e3a5d90f3744dc83"},
+    {file = "clang_format-16.0.4-py2.py3-none-win32.whl", hash = "sha256:4cdb618c7deaf9f864c367223d13e52def2cb457ff33c3fbb2c91cd4bfa5c03b"},
+    {file = "clang_format-16.0.4-py2.py3-none-win_amd64.whl", hash = "sha256:74e6d7b045774474bb5d142564cb64a5698915073f76b69046229504e5dbb96a"},
 ]
 
 [[package]]
@@ -261,16 +261,16 @@ test = ["appdirs (==1.4.4)", "covdefaults (>=2.2.2)", "pytest (>=7.2)", "pytest-
 
 [[package]]
 name = "platformio"
-version = "6.1.6"
+version = "6.1.7"
 description = "A professional collaborative platform for embedded development. Cross-platform IDE and Unified Debugger. Static Code Analyzer and Remote Unit Testing. Multi-platform and Multi-architecture Build System. Firmware File Explorer and Memory Inspection. IoT, Arduino, CMSIS, ESP-IDF, FreeRTOS, libOpenCM3, mbedOS, Pulp OS, SPL, STM32Cube, Zephyr RTOS, ARM, AVR, Espressif (ESP8266/ESP32), FPGA, MCS-51 (8051), MSP430, Nordic (nRF51/nRF52), NXP i.MX RT, PIC32, RISC-V, STMicroelectronics (STM8/STM32), Teensy"
 optional = false
 python-versions = ">=3.6"
 files = [
-    {file = "platformio-6.1.6.tar.gz", hash = "sha256:d0214c4da22454269220c0344214eb1fe1f65ca1c9dc19a3d160653a92343af4"},
+    {file = "platformio-6.1.7.tar.gz", hash = "sha256:9e72b94ff936bc530e80bef3f1ad5319d84fb4144bcf9587a4cc70ea6090ffce"},
 ]
 
 [package.dependencies]
-aiofiles = "==22.1.*"
+aiofiles = "==23.1.*"
 ajsonrpc = "==1.*"
 bottle = "==0.12.*"
 click = ">=8.0.4,<9"
@@ -280,20 +280,21 @@ pyelftools = ">=0.27,<1"
 pyserial = "==3.5.*"
 requests = "==2.*"
 semantic_version = "==2.10.*"
-starlette = "==0.23.*"
+starlette = "==0.26.*"
 tabulate = "==0.9.*"
-uvicorn = "==0.20.*"
+urllib3 = "<2"
+uvicorn = "==0.22.*"
 wsproto = "==1.2.*"
 
 [[package]]
 name = "pre-commit"
-version = "3.2.2"
+version = "3.3.2"
 description = "A framework for managing and maintaining multi-language pre-commit hooks."
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "pre_commit-3.2.2-py2.py3-none-any.whl", hash = "sha256:0b4210aea813fe81144e87c5a291f09ea66f199f367fa1df41b55e1d26e1e2b4"},
-    {file = "pre_commit-3.2.2.tar.gz", hash = "sha256:5b808fcbda4afbccf6d6633a56663fed35b6c2bc08096fd3d47ce197ac351d9d"},
+    {file = "pre_commit-3.3.2-py2.py3-none-any.whl", hash = "sha256:8056bc52181efadf4aac792b1f4f255dfd2fb5a350ded7335d251a68561e8cb6"},
+    {file = "pre_commit-3.3.2.tar.gz", hash = "sha256:66e37bec2d882de1f17f88075047ef8962581f83c234ac08da21a0c58953d1f0"},
 ]
 
 [package.dependencies]
@@ -442,13 +443,13 @@ files = [
 
 [[package]]
 name = "starlette"
-version = "0.23.1"
+version = "0.26.1"
 description = "The little ASGI library that shines."
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "starlette-0.23.1-py3-none-any.whl", hash = "sha256:ec69736c90be8dbfc6ec6800ba6feb79c8c44f9b1706c0b2bb27f936bcf362cc"},
-    {file = "starlette-0.23.1.tar.gz", hash = "sha256:8510e5b3d670326326c5c1d4cb657cc66832193fe5d5b7015a51c7b1e1b1bf42"},
+    {file = "starlette-0.26.1-py3-none-any.whl", hash = "sha256:e87fce5d7cbdde34b76f0ac69013fd9d190d581d80681493016666e6f96c6d5e"},
+    {file = "starlette-0.26.1.tar.gz", hash = "sha256:41da799057ea8620e4667a3e69a5b1923ebd32b1819c8fa75634bbe8d8bea9bd"},
 ]
 
 [package.dependencies]
@@ -501,13 +502,13 @@ socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
 
 [[package]]
 name = "uvicorn"
-version = "0.20.0"
+version = "0.22.0"
 description = "The lightning-fast ASGI server."
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "uvicorn-0.20.0-py3-none-any.whl", hash = "sha256:c3ed1598a5668208723f2bb49336f4509424ad198d6ab2615b7783db58d919fd"},
-    {file = "uvicorn-0.20.0.tar.gz", hash = "sha256:a4e12017b940247f836bc90b72e725d7dfd0c8ed1c51eb365f5ba30d9f5127d8"},
+    {file = "uvicorn-0.22.0-py3-none-any.whl", hash = "sha256:e9434d3bbf05f310e762147f769c9f21235ee118ba2d2bf1155a7196448bd996"},
+    {file = "uvicorn-0.22.0.tar.gz", hash = "sha256:79277ae03db57ce7d9aa0567830bbb51d7a612f54d6e1e3e92da3ef24c2c8ed8"},
 ]
 
 [package.dependencies]
@@ -554,4 +555,4 @@ h11 = ">=0.9.0,<1"
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.9,<3.12"
-content-hash = "cbce802bfecc7083d374d8067fa91b4a253bcfb6d90cfc694d40ded9b30b8a2c"
+content-hash = "884b23e52e522cca9b3a20dc9e36da4033947d188a1f09907e2a5a7a200a557a"
