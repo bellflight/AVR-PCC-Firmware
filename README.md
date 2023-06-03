@@ -8,12 +8,14 @@ It's assumed you have a version of Python installed from
 [python.org](https://python.org) that is the same or newer as
 defined in [`.python-version`](.python-version).
 
-First, install [Poetry](https://python-poetry.org/):
+First, install [Poetry](https://python-poetry.org/) and
+[VS Code Task Runner](https://pypi.org/project/vscode-task-runner/):
 
 ```bash
 python -m pip install pipx --upgrade
 pipx ensurepath
 pipx install poetry
+pipx install vscode-task-runner
 # (Optionally) Add pre-commit plugin
 poetry self add poetry-pre-commit-plugin
 ```
@@ -23,9 +25,7 @@ Now, you can clone the repo and install dependencies:
 ```bash
 git clone https://github.com/bellflight/AVR-PCC-Firmware
 cd AVR-PCC-Firmware
-poetry install --sync
-poetry run pre-commit install --install-hooks
-poetry run python configure.py
+vtr setup
 ```
 
 ## Building
@@ -33,10 +33,10 @@ poetry run python configure.py
 To build the firmware, run
 
 ```bash
-poetry run python build.py
+vtr build
 ```
 
-This will create a `pcc_firmware.<hash>.bin` file in `dist`.
+This will create a `pcc_firmware.bin` file in `dist`.
 
 ## Flashing
 
