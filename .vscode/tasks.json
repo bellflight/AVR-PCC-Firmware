@@ -9,18 +9,19 @@
         {
             "label": "pre-commit",
             "type": "shell",
-            "command": "poetry run pre-commit run --all-files"
+            "command": "poetry run pre-commit run --all-files",
+            "dependsOn": ["install"]
         },
         {
-            "label": "poetry-install",
+            "label": "install",
             "command": "poetry install --sync",
             "type": "shell"
         },
         {
-            "label": "install",
+            "label": "setup",
             "type": "shell",
             "command": "poetry run python configure.py",
-            "dependsOn": ["poetry-install"]
+            "dependsOn": ["install"]
         },
         {
             "label": "checks",

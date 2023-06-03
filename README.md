@@ -25,7 +25,7 @@ Now, you can clone the repo and install dependencies:
 ```bash
 git clone https://github.com/bellflight/AVR-PCC-Firmware
 cd AVR-PCC-Firmware
-vtr install
+vtr setup
 ```
 
 ## Building
