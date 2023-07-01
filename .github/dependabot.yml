@@ -6,7 +6,7 @@ updates:
       interval: "monthly"
     target-branch: "develop"
     groups:
-      all:
+      github-actions-all:
         patterns:
           - "*"
 
@@ -16,7 +16,7 @@ updates:
       interval: "monthly"
     target-branch: "develop"
     groups:
-      all:
+      gitsubmodule-all:
         patterns:
           - "*"
 
@@ -26,6 +26,6 @@ updates:
       interval: "monthly"
     target-branch: "develop"
     groups:
-      all:
+      pip-all:
         patterns:
           - "*"
