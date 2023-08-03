@@ -1,12 +1,12 @@
 diff --git a/src/cppQueue.h b/src/cppQueue.h
-index 4b71847..b701f28 100755
+index 2012d77..f08bac4 100755
 --- a/src/cppQueue.h
 +++ b/src/cppQueue.h
-@@ -50,6 +50,7 @@ public:
- 	**	\param [in] overwrite - Overwrite previous records when queue is full
+@@ -54,6 +54,7 @@ public:
+ 	**	\param [in] lenQDat - Length of static data queue (in bytes) for static array size check against required size for queue
  	**	\return nothing
  	**/
 +	cppQueue() = default;
- 	cppQueue(const uint16_t size_rec, const uint16_t nb_recs=20, const cppQueueType type=FIFO, const bool overwrite=false);
+ 	cppQueue(const size_t size_rec, const uint16_t nb_recs=20, const cppQueueType type=FIFO, const bool overwrite=false, void * const pQDat=NULL, const size_t lenQDat=0);
  
  	/*!	\brief cppQueue destructor: release dynamically allocated queue
