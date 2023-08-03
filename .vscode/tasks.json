@@ -10,7 +10,9 @@
             "label": "pre-commit",
             "type": "shell",
             "command": "poetry run pre-commit run --all-files",
-            "dependsOn": ["install"]
+            "dependsOn": [
+                "install"
+            ]
         },
         {
             "label": "install",
@@ -21,12 +23,22 @@
             "label": "setup",
             "type": "shell",
             "command": "poetry run python configure.py",
-            "dependsOn": ["install"]
+            "dependsOn": [
+                "install"
+            ]
         },
         {
             "label": "checks",
             "type": "shell",
             "command": "poetry run pio check --skip-packages"
+        },
+        {
+            "label": "make-patch",
+            "type": "shell",
+            "command": "git diff > ..${pathSeparator}queue-default.patch",
+            "options": {
+                "cwd": "${workspaceFolder}${pathSeparator}libraries${pathSeparator}Queue"
+            }
         }
     ]
 }
