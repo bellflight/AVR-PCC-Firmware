@@ -9,7 +9,7 @@
 
 [tool.poetry.dependencies]
     python     = ">=3.9,<3.12"
-    platformio = "6.1.9"
+    platformio = "6.1.11"
 
 [tool.poetry.group.dev.dependencies]
     pre-commit   = "3.3.3"
