@@ -12,5 +12,5 @@
     platformio = "6.1.11"
 
 [tool.poetry.group.dev.dependencies]
-    pre-commit   = "3.3.3"
-    clang-format = "16.0.6"
+    pre-commit   = "3.4.0"
+    clang-format = "17.0.1"
