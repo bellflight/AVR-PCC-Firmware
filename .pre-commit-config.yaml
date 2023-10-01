@@ -22,15 +22,15 @@ repos:
         - --fix
         id: ruff
     repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.0.286
+    rev: v0.0.291
 -   hooks:
     -   id: black
     repo: https://github.com/psf/black
-    rev: 23.7.0
+    rev: 23.9.1
 -   hooks:
     -   id: markdownlint
     repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.35.0
+    rev: v0.37.0
 -   hooks:
     -   args:
         - -i
