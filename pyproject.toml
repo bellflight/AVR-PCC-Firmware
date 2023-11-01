@@ -8,7 +8,7 @@
     authors     = ["Nathan Vaughn <nvaughn51@gmail.com>"]
 
 [tool.poetry.dependencies]
-    python     = ">=3.9,<3.12"
+    python     = ">=3.9,<3.13"
     platformio = "6.1.11"
 
 [tool.poetry.group.dev.dependencies]
