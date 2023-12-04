@@ -8,9 +8,9 @@
     authors     = ["Nathan Vaughn <nvaughn51@gmail.com>"]
 
 [tool.poetry.dependencies]
-    python     = ">=3.9,<3.12"
-    platformio = "6.1.9"
+    python     = ">=3.9,<3.13"
+    platformio = "6.1.11"
 
 [tool.poetry.group.dev.dependencies]
-    pre-commit   = "3.3.3"
-    clang-format = "16.0.6"
+    pre-commit   = "3.5.0"
+    clang-format = "17.0.6"
